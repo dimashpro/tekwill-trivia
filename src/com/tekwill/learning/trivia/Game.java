@@ -164,6 +164,7 @@ public class Game {
                 }
             }
             System.out.println("You have " + scoreTotal + " points. Thank you!");
+            startGame = "NO";
         }
 
 
