@@ -1,12 +1,12 @@
-package com.tekwill.learning.trivia.gamearray.engine;
+package com.tekwill.learning.trivia.gameversion4.engine;
 
-import com.tekwill.learning.trivia.gamearray.domain.Answer;
-import com.tekwill.learning.trivia.gamearray.domain.AskAudienceHelpOption;
-import com.tekwill.learning.trivia.gamearray.domain.AskFriendHelpOption;
-import com.tekwill.learning.trivia.gamearray.domain.FiftyFiftyHelpOption;
-import com.tekwill.learning.trivia.gamearray.domain.Question;
-import com.tekwill.learning.trivia.gamearray.repository.QuestionRepository;
-import com.tekwill.learning.trivia.gamearray.service.QuestionService;
+import com.tekwill.learning.trivia.gameversion4.domain.Answer;
+import com.tekwill.learning.trivia.gameversion4.domain.AskAudienceHelpOption;
+import com.tekwill.learning.trivia.gameversion4.domain.AskFriendHelpOption;
+import com.tekwill.learning.trivia.gameversion4.domain.FiftyFiftyHelpOption;
+import com.tekwill.learning.trivia.gameversion4.domain.Question;
+import com.tekwill.learning.trivia.gameversion4.repository.QuestionRepository;
+import com.tekwill.learning.trivia.gameversion4.service.QuestionService;
 
 import java.util.Random;
 import java.util.Scanner;

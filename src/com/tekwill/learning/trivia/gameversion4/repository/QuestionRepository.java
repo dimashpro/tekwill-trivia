@@ -1,7 +1,7 @@
-package com.tekwill.learning.trivia.gamearray.repository;
+package com.tekwill.learning.trivia.gameversion4.repository;
 
-import com.tekwill.learning.trivia.gamearray.domain.Answer;
-import com.tekwill.learning.trivia.gamearray.domain.Question;
+import com.tekwill.learning.trivia.gameversion4.domain.Answer;
+import com.tekwill.learning.trivia.gameversion4.domain.Question;
 
 public class QuestionRepository {
     public Question[] questions = new Question[]{

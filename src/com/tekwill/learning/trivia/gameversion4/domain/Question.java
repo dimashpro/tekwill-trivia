@@ -1,9 +1,9 @@
-package com.tekwill.learning.trivia.gamearray.domain;
+package com.tekwill.learning.trivia.gameversion4.domain;
 
 
 import java.util.Arrays;
 
-import static com.tekwill.learning.trivia.gamearray.util.Shuffler.shuffleAnswers;
+import static com.tekwill.learning.trivia.gameversion4.util.Shuffler.shuffleAnswers;
 
 public class Question {
     private final Answer[] answers;

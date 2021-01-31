@@ -1,15 +1,16 @@
-package com.tekwill.learning.trivia.gamearray.domain;
+package com.tekwill.learning.trivia.gameversion4.domain;
 
-
-public class Answer {
+public class HelpAnswer {
     private String text;
     private boolean isCorrect;
     private String letter;
+    private int probability;
 
-    public Answer(String text, boolean isCorrect, String letter) {
+    public HelpAnswer(String text, boolean isCorrect, String letter, int probability) {
         this.text = text;
         this.isCorrect = isCorrect;
         this.letter = letter;
+        this.probability = probability;
     }
 
     public String getText() {
@@ -36,8 +37,21 @@ public class Answer {
         this.letter = letter;
     }
 
+    public int getProbability() {
+        return probability;
+    }
+
+    public void setProbability(int probability) {
+        this.probability = probability;
+    }
+
     @Override
     public String toString() {
-        return letter + ". " + text;
+        return "HelpAnswer{" +
+                "text='" + text + '\'' +
+                ", isCorrect=" + isCorrect +
+                ", letter='" + letter + '\'' +
+                ", probability=" + probability +
+                '}';
     }
 }

@@ -1,7 +1,7 @@
-package com.tekwill.learning.trivia.gamearray.util;
+package com.tekwill.learning.trivia.gameversion4.util;
 
-import com.tekwill.learning.trivia.gamearray.domain.Answer;
-import com.tekwill.learning.trivia.gamearray.domain.Question;
+import com.tekwill.learning.trivia.gameversion4.domain.Answer;
+import com.tekwill.learning.trivia.gameversion4.domain.Question;
 
 import java.util.Random;
 

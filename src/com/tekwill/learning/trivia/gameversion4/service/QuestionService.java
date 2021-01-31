@@ -1,8 +1,8 @@
-package com.tekwill.learning.trivia.gamearray.service;
+package com.tekwill.learning.trivia.gameversion4.service;
 
-import com.tekwill.learning.trivia.gamearray.domain.Question;
-import com.tekwill.learning.trivia.gamearray.repository.QuestionRepository;
-import com.tekwill.learning.trivia.gamearray.util.Shuffler;
+import com.tekwill.learning.trivia.gameversion4.domain.Question;
+import com.tekwill.learning.trivia.gameversion4.repository.QuestionRepository;
+import com.tekwill.learning.trivia.gameversion4.util.Shuffler;
 
 public class QuestionService {
     private final QuestionRepository questionRepository;
