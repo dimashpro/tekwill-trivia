@@ -1,7 +1,7 @@
-package com.tekwill.learning.trivia.gameversion2.engine;
+package com.tekwill.learning.trivia.gameversion3.engine;
 
-import com.tekwill.learning.trivia.gameversion2.domain.Answer;
-import com.tekwill.learning.trivia.gameversion2.domain.Question;
+import com.tekwill.learning.trivia.gameversion3.domain.Answer;
+import com.tekwill.learning.trivia.gameversion3.domain.Question;
 
 public class Questions {
 

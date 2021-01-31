@@ -1,9 +1,9 @@
-package com.tekwill.learning.trivia.gameversion2.engine;
+package com.tekwill.learning.trivia.gameversion3.engine;
 
-import com.tekwill.learning.trivia.gameversion2.domain.AskAudienceHelpOption;
-import com.tekwill.learning.trivia.gameversion2.domain.AskFriendHelpOption;
-import com.tekwill.learning.trivia.gameversion2.domain.FiftyFiftyHelpOption;
-import com.tekwill.learning.trivia.gameversion2.domain.Question;
+import com.tekwill.learning.trivia.gameversion3.domain.AskAudienceHelpOption;
+import com.tekwill.learning.trivia.gameversion3.domain.AskFriendHelpOption;
+import com.tekwill.learning.trivia.gameversion3.domain.FiftyFiftyHelpOption;
+import com.tekwill.learning.trivia.gameversion3.domain.Question;
 
 import java.util.Scanner;
 

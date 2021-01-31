@@ -1,4 +1,4 @@
-package com.tekwill.learning.trivia.gameversion2.domain;
+package com.tekwill.learning.trivia.gameversion3.domain;
 
 import java.util.Random;
 

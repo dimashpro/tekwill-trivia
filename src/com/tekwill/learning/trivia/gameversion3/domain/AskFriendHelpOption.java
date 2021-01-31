@@ -1,13 +1,11 @@
-package com.tekwill.learning.trivia.gameversion2.domain;
+package com.tekwill.learning.trivia.gameversion3.domain;
 
-public class FiftyFiftyHelpOption {
+public class AskFriendHelpOption {
     private boolean isUsed = false;
     private boolean isInvoked = false;
 
     public void invoke(Question question) {
-        System.out.println("    (\uD83E\uDD16) -> Computer says: ");
-        System.out.println("          \u2B55 " + question.getAnswerOne() + " - 50%");
-        System.out.println("          \u2B55 " + question.getAnswerFour() + " - 50%");
+        System.out.println("    (\uD83D\uDDE3) -> Friend tells that most probably is this one - " + question.getAnswerFour() + " - 99.7%");
         setUsed(true);
         setInvoked(false);
     }
