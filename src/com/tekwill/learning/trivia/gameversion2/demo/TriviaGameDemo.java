@@ -1,6 +1,6 @@
-package com.tekwill.learning.trivia.game.demo;
+package com.tekwill.learning.trivia.gameversion2.demo;
 
-import com.tekwill.learning.trivia.game.engine.TriviaGame;
+import com.tekwill.learning.trivia.gameversion2.engine.TriviaGame;
 
 public class TriviaGameDemo {
     public static void main(String[] args) {
