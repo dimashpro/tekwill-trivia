@@ -33,13 +33,17 @@ public class QuestionRepository {
                     Arrays.asList(new Answer("encapsulation", false, "A"), new Answer("platform independence", true, "B"),
                             new Answer("drinking beer", true, "C"), new Answer("object orientation", false, "D"))),
 
-            new Question(350, 3, "Where is the heart of the shrimp situated?",
-                    Arrays.asList(new Answer("In the head", false, "A"), new Answer("In the shoulder", true, "B"),
-                            new Answer("In the foot", false, "C"), new Answer("In the solpa", false, "D"))),
+            new Question(350, 3, "Where are stored object reference variables?",
+                    Arrays.asList(new Answer("In Stack memory", false, "A"), new Answer("In brain", false, "B"),
+                            new Answer("In Heap memory", true, "C"), new Answer("On the roof", false, "D"))),
 
-            new Question(350, 3, "Where is the heart of the bimbo located?",
-                    Arrays.asList(new Answer("In the bead", false, "A"), new Answer("In the boulder", true, "B"),
-                            new Answer("In the boot", false, "C"), new Answer("In the dolpa", false, "D")))));
+            new Question(350, 3, "Who is awesome??? :)",
+                    Arrays.asList(new Answer("Java", true, "A"), new Answer("Python", false, "B"),
+                            new Answer("C#", false, "C"), new Answer("JavaScript", false, "D"))),
+
+            new Question(350, 3, "Which of these data types have smallest size?",
+                    Arrays.asList(new Answer("byte", true, "A"), new Answer("short", false, "B"),
+                            new Answer("int", false, "C"), new Answer("long", false, "D")))));
 
 
     public List<Question> findQuestionsByLevel(int level) {
