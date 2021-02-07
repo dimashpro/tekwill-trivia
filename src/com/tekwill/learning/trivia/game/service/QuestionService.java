@@ -1,7 +1,7 @@
-package com.tekwill.learning.trivia.gameversion5.service;
+package com.tekwill.learning.trivia.game.service;
 
-import com.tekwill.learning.trivia.gameversion5.domain.Question;
-import com.tekwill.learning.trivia.gameversion5.repository.QuestionRepository;
+import com.tekwill.learning.trivia.game.domain.Question;
+import com.tekwill.learning.trivia.game.repository.QuestionRepository;
 
 import java.util.Collections;
 import java.util.List;
