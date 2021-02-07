@@ -1,6 +1,6 @@
-package com.tekwill.learning.trivia.gameversion5.demo;
+package com.tekwill.learning.trivia.game.demo;
 
-import com.tekwill.learning.trivia.gameversion5.engine.TriviaGame;
+import com.tekwill.learning.trivia.game.engine.TriviaGame;
 
 import java.util.Scanner;
 
