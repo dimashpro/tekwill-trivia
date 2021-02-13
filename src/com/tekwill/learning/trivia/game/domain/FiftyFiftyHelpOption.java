@@ -3,9 +3,8 @@ package com.tekwill.learning.trivia.game.domain;
 import java.util.List;
 import java.util.Random;
 
-public class FiftyFiftyHelpOption {
-    private boolean isUsed = false;
-    private boolean isInvoked = false;
+public class FiftyFiftyHelpOption extends HelpOption {
+
 
     public void invoke(Question question) {
         List<Answer> wrongAnswers = question.getWrongAnswers();
@@ -19,19 +18,4 @@ public class FiftyFiftyHelpOption {
         setInvoked(false);
     }
 
-    public boolean isUsed() {
-        return isUsed;
-    }
-
-    public void setUsed(boolean used) {
-        isUsed = used;
-    }
-
-    public boolean isInvoked() {
-        return isInvoked;
-    }
-
-    public void setInvoked(boolean invoked) {
-        isInvoked = invoked;
-    }
 }
