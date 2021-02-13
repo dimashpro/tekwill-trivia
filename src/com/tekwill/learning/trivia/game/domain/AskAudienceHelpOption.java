@@ -3,9 +3,7 @@ package com.tekwill.learning.trivia.game.domain;
 import java.util.List;
 import java.util.Random;
 
-public class AskAudienceHelpOption {
-    private boolean isUsed = false;
-    private boolean isInvoked = false;
+public class AskAudienceHelpOption extends HelpOption {
 
     public void invoke(Question question) {
         System.out.println("    (\uD83D\uDC65) -> Auditory voted like this: ");
@@ -22,19 +20,4 @@ public class AskAudienceHelpOption {
         setInvoked(false);
     }
 
-    public boolean isUsed() {
-        return isUsed;
-    }
-
-    public void setUsed(boolean used) {
-        isUsed = used;
-    }
-
-    public boolean isInvoked() {
-        return isInvoked;
-    }
-
-    public void setInvoked(boolean invoked) {
-        isInvoked = invoked;
-    }
 }
