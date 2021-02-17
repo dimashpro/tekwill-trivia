@@ -1,5 +1,6 @@
 package com.tekwill.learning.trivia.game.demo;
 
+import com.tekwill.learning.trivia.game.engine.TriviaAdmin;
 import com.tekwill.learning.trivia.game.engine.TriviaGame;
 
 import java.util.Scanner;
@@ -13,6 +14,10 @@ public class TriviaGameDemo {
             String response = scanner.nextLine();
             if (response.equalsIgnoreCase("START")) {
                 new TriviaGame().startGame();
+
+            } else if (response.equalsIgnoreCase("ADMIN")) {
+                new TriviaAdmin().start();
+
             } else if (response.equalsIgnoreCase("EXIT")) {
                 System.out.println("Bye, bye!");
                 gameMenuRunning = false;
