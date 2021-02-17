@@ -5,8 +5,9 @@ import com.tekwill.learning.trivia.game.domain.AskAudienceHelpOption;
 import com.tekwill.learning.trivia.game.domain.AskFriendHelpOption;
 import com.tekwill.learning.trivia.game.domain.FiftyFiftyHelpOption;
 import com.tekwill.learning.trivia.game.domain.Question;
-import com.tekwill.learning.trivia.game.repository.QuestionRepository;
+import com.tekwill.learning.trivia.game.repository.QuestionRepositoryImpl;
 import com.tekwill.learning.trivia.game.service.QuestionService;
+import com.tekwill.learning.trivia.game.service.QuestionServiceImpl;
 
 import java.util.List;
 import java.util.Random;
@@ -14,7 +15,7 @@ import java.util.Scanner;
 
 public class TriviaGame {
 
-    private final QuestionService questionService = new QuestionService(new QuestionRepository());
+    private final QuestionService questionService = new QuestionServiceImpl(new QuestionRepositoryImpl());
     private AskAudienceHelpOption askAudienceHelpOption = new AskAudienceHelpOption();
     private AskFriendHelpOption askFriendHelpOption = new AskFriendHelpOption();
     private FiftyFiftyHelpOption fiftyFiftyHelpOption = new FiftyFiftyHelpOption();
