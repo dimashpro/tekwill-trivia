@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class QuestionRepository {
+public class QuestionRepositoryImpl implements QuestionRepository {
     public List<Question> questions = new ArrayList<>(Arrays.asList(
             new Question(100, 1, "Which of these cities is the capital of the Republic of Moldova?",
                     Arrays.asList(new Answer("Rome", false, "A"), new Answer("Vienna", false, "B"),
@@ -46,6 +46,7 @@ public class QuestionRepository {
                             new Answer("int", false, "C"), new Answer("long", false, "D")))));
 
 
+    @Override
     public List<Question> findQuestionsByLevel(int level) {
         List<Question> result = new ArrayList<>();
         for (int i = 0, j = 0; i < questions.size(); i++) {
