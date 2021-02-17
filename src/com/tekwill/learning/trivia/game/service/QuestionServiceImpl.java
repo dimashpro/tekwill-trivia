@@ -6,13 +6,14 @@ import com.tekwill.learning.trivia.game.repository.QuestionRepository;
 import java.util.Collections;
 import java.util.List;
 
-public class QuestionService {
+public class QuestionServiceImpl implements QuestionService {
     private final QuestionRepository questionRepository;
 
-    public QuestionService(QuestionRepository questionRepository) {
+    public QuestionServiceImpl(QuestionRepository questionRepository) {
         this.questionRepository = questionRepository;
     }
 
+    @Override
     public List<Question> getQuestionsByLevel(int level) {
         List<Question> questionsByLevel = questionRepository.findQuestionsByLevel(level);
         Collections.shuffle(questionsByLevel);
