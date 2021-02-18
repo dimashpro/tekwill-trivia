@@ -1,14 +1,20 @@
 package com.tekwill.learning.trivia.game.domain;
 
 
+import com.tekwill.learning.trivia.game.domain.exceptions.EmptyAnswerTextException;
+
 import java.util.Objects;
 
 public class Answer {
     private String text;
     private boolean isCorrect;
     private String letter;
+    private Question question;
+
 
     public Answer(String text, boolean isCorrect, String letter) {
+        if (text.isEmpty())
+            throw new EmptyAnswerTextException("Answer text should not be empty");
         this.text = text;
         this.isCorrect = isCorrect;
         this.letter = letter;
@@ -36,6 +42,14 @@ public class Answer {
 
     public void setLetter(String letter) {
         this.letter = letter;
+    }
+
+    public Question getQuestion() {
+        return question;
+    }
+
+    public void setQuestion(Question question) {
+        this.question = question;
     }
 
     @Override
