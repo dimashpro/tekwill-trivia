@@ -55,4 +55,19 @@ public class QuestionRepositoryImpl implements QuestionRepository {
         }
         return result;
     }
+
+    @Override
+    public boolean save(Question question) {
+        return questions.add(question);
+    }
+
+    @Override
+    public boolean delete(Question question) {
+        return questions.remove(question);
+    }
+
+    @Override
+    public List<Question> findAll() {
+        return questions;
+    }
 }
