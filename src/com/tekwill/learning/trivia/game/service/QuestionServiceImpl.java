@@ -20,4 +20,18 @@ public class QuestionServiceImpl implements QuestionService {
         return questionsByLevel;
     }
 
+    @Override
+    public boolean save(Question question) {
+        return questionRepository.save(question);
+    }
+
+    @Override
+    public boolean delete(Question question) {
+        return questionRepository.delete(question);    }
+
+    @Override
+    public List<Question> getAll() {
+        return questionRepository.findAll();
+    }
+
 }
