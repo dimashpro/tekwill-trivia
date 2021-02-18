@@ -57,12 +57,15 @@ public class Answer {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Answer answer = (Answer) o;
-        return isCorrect == answer.isCorrect && Objects.equals(text, answer.text) && Objects.equals(letter, answer.letter);
+        return isCorrect == answer.isCorrect &&
+                Objects.equals(text, answer.text) &&
+                Objects.equals(letter, answer.letter) &&
+                Objects.equals(question, answer.question);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(text, isCorrect, letter);
+        return Objects.hash(text, isCorrect, letter, question);
     }
 
     @Override
