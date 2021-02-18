@@ -1,5 +1,9 @@
 package com.tekwill.learning.trivia.game.domain;
 
+import com.tekwill.learning.trivia.game.domain.exceptions.EmptyQuestionTextException;
+import com.tekwill.learning.trivia.game.domain.exceptions.InvalidLevelException;
+import com.tekwill.learning.trivia.game.domain.exceptions.InvalidScoreException;
+
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -7,17 +11,30 @@ import java.util.List;
 import java.util.Objects;
 
 public class Question {
-    private final List<Answer> answers;
+    private List<Answer> answers = new ArrayList<>();
     private int score;
     private int level;
     private String text;
 
     public Question(int score, int level, String text, List<Answer> answers) {
+        this(score, level, text);
+        this.answers = answers;
+        this.answers.forEach(a -> a.setQuestion(this));
+    }
+
+    public Question(int score, int level, String text) {
+        if (text.isEmpty()) {
+            throw new EmptyQuestionTextException("Question text should not be empty");
+        }
+        if (score < 0) {
+            throw new InvalidScoreException("Score must be greater than 0");
+        }
+        if (level < 0) {
+            throw new InvalidLevelException("Level must be greater than 0");
+        }
         this.score = score;
         this.level = level;
         this.text = text;
-        this.answers = answers;
-        //validate just one correct answer
     }
 
     public int getScore() {
@@ -67,12 +84,25 @@ public class Question {
         return wrongAnswers;
     }
 
+    public void addAnswer(Answer answer) {
+        answers.add(answer);
+        answer.setQuestion(this);
+    }
+
+    public void removeAnswer(Answer answer) {
+        answers.add(answer);
+        answer.setQuestion(null);
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Question question = (Question) o;
-        return score == question.score && level == question.level && Objects.equals(answers, question.answers) && Objects.equals(text, question.text);
+        return score == question.score &&
+                level == question.level &&
+                Objects.equals(answers, question.answers) &&
+                Objects.equals(text, question.text);
     }
 
     @Override
