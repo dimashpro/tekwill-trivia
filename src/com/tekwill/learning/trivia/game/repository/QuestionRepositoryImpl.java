@@ -30,7 +30,7 @@ public class QuestionRepositoryImpl implements QuestionRepository {
                             new Answer("static", false, "C"), new Answer("final", false, "D"))),
 
             new Question(250, 2, "Which of these is NOT a feature and component of Java?",
-                    Arrays.asList(new Answer("encapsulation", false, "A"), new Answer("platform independence", true, "B"),
+                    Arrays.asList(new Answer("encapsulation", false, "A"), new Answer("platform independence", false, "B"),
                             new Answer("drinking beer", true, "C"), new Answer("object orientation", false, "D"))),
 
             new Question(350, 3, "Where are stored object reference variables?",
@@ -49,7 +49,7 @@ public class QuestionRepositoryImpl implements QuestionRepository {
     @Override
     public List<Question> findQuestionsByLevel(int level) {
         List<Question> result = new ArrayList<>();
-        for (int i = 0, j = 0; i < questions.size(); i++) {
+        for (int i = 0; i < questions.size(); i++) {
             if (questions.get(i).getLevel() == level)
                 result.add(questions.get(i));
         }
