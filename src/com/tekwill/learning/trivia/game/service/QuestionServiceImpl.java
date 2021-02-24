@@ -16,7 +16,7 @@ public class QuestionServiceImpl implements QuestionService {
     @Override
     public List<Question> getQuestionsByLevel(int level) {
         List<Question> questionsByLevel = questionRepository.findQuestionsByLevel(level);
-      //  Collections.shuffle(questionsByLevel);
+        Collections.shuffle(questionsByLevel);
         return questionsByLevel;
     }
 

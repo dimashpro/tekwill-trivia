@@ -51,20 +51,20 @@ public class QuestionRepositoryImpl implements QuestionRepository {
 
     @Override
     public List<Question> findQuestionsByLevel(int level) {
-//        List<Question> result = new ArrayList<>();
-//        for (int i = 0; i < questions.size(); i++) {
-//            if (questions.get(i).getLevel() == level)
-//                result.add(questions.get(i));
+        List<Question> result = new ArrayList<>();
+        for (int i = 0; i < questions.size(); i++) {
+            if (questions.get(i).getLevel() == level)
+                result.add(questions.get(i));
+        }
+        return result;
+
+//        try (Connection connection = DriverManager.getConnection(
+//                "jdbc:postgresql://localhost:5432/trivia-db?user=postgres&password=123456")) {
+//            System.out.println("Using long url obtained " + connection.getClientInfo());
+//        } catch (SQLException e) {
+//            e.printStackTrace();
 //        }
 //        return result;
-
-        try (Connection connection = DriverManager.getConnection(
-                "jdbc:postgresql://localhost:5432/trivia-db?user=postgres&password=123456")) {
-            System.out.println("Using long url obtained " + connection.getClientInfo());
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return null;
     }
 
     @Override
